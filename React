@@ -49,7 +49,7 @@ end
 UserInputService.InputBegan:Connect(function(input, gameProcessed)
     if gameProcessed then return end
 
-    if input.KeyCode == Enum.KeyCode.End then
+    if input.KeyCode == Enum.KeyCode.F4 then
         if currentIndex < #levelOrder then
             currentIndex += 1
             applyLevel()
